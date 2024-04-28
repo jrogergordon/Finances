@@ -27,7 +27,7 @@ def display_nested_pie_chart():
     wedges, _ = ax.pie(df_general.values, radius=1, labels=df_general.index, autopct="%1.1f%%")
 
     # Inner circles (Type_Specific)
-    num_types_general = len(df_general.index)
+    num_types_general = len(df_general.index) 
     colors = plt.cm.get_cmap('viridis')(np.linspace(0, 1, num_types_general))  # Vary colors
 
     for i, type_general in enumerate(df_general.index):
