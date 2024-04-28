@@ -30,7 +30,10 @@ def display_bar_chart():
     for i, amount in enumerate(amounts):
         plt.text(i, amount + 0.1, f"${amount:.2f}", ha='center') 
 
-    plt.xlabel("Expense Type")
+    df_grouped = df.groupby(['Type_General', 'Type_Specific'])['Amount'].sum().unstack()
+    df_grouped.plot(kind='bar', stacked=True)
+
+    plt.xlabel("Type_General")
     plt.ylabel("Amount")
     plt.title(f"Expenses in {month}/{year}" if month != 0 else f"Expenses in {year}")
     plt.show()
