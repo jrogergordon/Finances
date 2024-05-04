@@ -1,13 +1,13 @@
 import pandas as pd
 
 # Specify the month and year here
-month = "4"
+month = "5"
 year = "2024"
-# type_specific = "Groceries"
+# type_specific = "Subscr"
 # type_general = "Necessity"
 
 # Define the types
-specific_types = ["BS Food", "Miscellaneous BS", "Subscriptions", "Debt Payments", "Transportation", "Groceries", "Health Care", "Phone", "Internet", "Rent", "Games", "Grooming"]
+specific_types = ["BS Food", "Miscellaneous BS", "Subscriptions", "Debt Payments", "Transportation", "Groceries", "Health Care", "Phone", "Internet", "Rent", "Games", "Grooming", "Weed"]
 general_types = ["Fun Self", "Necessity", "Social", "Romantic"]
 
 def add_entry():
